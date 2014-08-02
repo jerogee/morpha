@@ -22,16 +22,18 @@ To build and install the 'morpha' executable, make sure that git,
 Autoconf, Automake, and Libtool are installed on your system, and:
 
 1. Clone this repository and reconfigure automake for the local system:
-
+```
    $ git clone -depth 1
    $ cd morpha/
    $ sh autogen.sh
+```
 
 2. Configure, compile, and install system wide:
-
+```
    $ ./configure
    $ make
    $ sudo make install
+```
 
 Usage
 -----
