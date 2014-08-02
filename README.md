@@ -3,6 +3,10 @@ Morpha : a morphological analyser for English
 
 Unpackaged original: http://www.sussex.ac.uk/Users/johnca/morph.html
 
+By Guido Minnen, John Carroll, and Darren Pearce, as described in: 
+
+* Minnen, G., J. Carroll and D. Pearce (2001) [Applied morphological processing of English](http://www.sussex.ac.uk/Users/johnca/papers/minnen.pdf), *Natural Language Engineering*, 7(3). 207-223. 
+
 A morphological analyser / lemmatiser for English based on finite-state 
 techniques. Given a word form (and its part of speech if available) it 
 returns the lemma and suffix. 
@@ -23,7 +27,7 @@ Autoconf, Automake, and Libtool are installed on your system, and:
 
 1. Clone this repository and reconfigure automake for the local system:
 ```
-   $ git clone -depth 1
+   $ git clone --depth=1 https://github.com/jerogee/morpha
    $ cd morpha/
    $ sh autogen.sh
 ```
@@ -39,8 +43,8 @@ Usage
 -----
 
 An example with STDIN and STDOUT:
-
+```
    $ echo "Students_NNS were_VBD writing_VBG letters_NNS" | morpha -act
    Student+s_NNS be+ed_VBD write+ing_VBG letter+s_NNS
-
+```
 See doc/doc.txt for the original details.
